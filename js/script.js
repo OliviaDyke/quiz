@@ -12,3 +12,12 @@ $(document).ready(function() {
     });
 
 });
+
+function whichCereal ( answer1, answer2, answer3) {
+    var strawberryJoe = 0; var cheerios = 0; var luckyCharms =0; 
+    
+    if (answer1 === "A") {
+        strawberryJoe += 10; 
+    }
+    
+}

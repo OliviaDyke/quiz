@@ -13,11 +13,43 @@ $(document).ready(function() {
 
 });
 
-function whichCereal ( answer1, answer2, answer3) {
-    var strawberryJoe = 0; var cheerios = 0; var luckyCharms =0; 
+
+    function question1 (q1Result) {
     
-    if (answer1 === "A") {
-        strawberryJoe += 10; 
+        if (q1Result === "A") {
+            return 5; 
+        } else if (q1Result === "B") {
+            return 10; 
+        } else if (answer1 === "C") {
+            return 2; 
+        }
+    }
+
+    function question2 () {
+        
+    if (answer2 === "A") {
+        return 10; 
+    } else if (answer2 === "B") {
+        return 20; 
+    } else if (answer2 === "C") {
+        return 4; 
+    }
     }
     
-}
+    function question3 () {
+        
+    if (answer3 === "A") {
+        return 30;
+    } else if (answer3 === "B") {
+        return 15; 
+    } else if (answer3 === "C") {
+        return 6; 
+    }
+    }
+    
+
+ function total () {
+     if ( cheerios > 5 && cheerios < 15) {
+         return "You are Cheerios!"; 
+     }
+ }

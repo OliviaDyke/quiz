@@ -8,48 +8,55 @@ $(document).ready(function() {
         var q1Result = $("#question1").val();
         var q2Result = $("#question2").val();
         var q3Result = $("#question3").val();
-        var totalScore;
+        var totalScore = question1(q1Result) + question2(q2Result) + question3(q3Result);
+        var result = $(".result").text("Your cereal is " + getAnswer(totalScore));
     });
 
 });
-
+// A totals to 45
+// B is 35
+// C is 12
 
     function question1 (q1Result) {
     
         if (q1Result === "A") {
-            return 5; 
-        } else if (q1Result === "B") {
-            return 10; 
-        } else if (answer1 === "C") {
             return 2; 
+        } else if (q1Result === "B") {
+            return 4; 
+        } else if (q1Result === "C") {
+            return 1; 
         }
     }
 
-    function question2 () {
+    function question2 (q2Result) {
         
-    if (answer2 === "A") {
-        return 10; 
-    } else if (answer2 === "B") {
-        return 20; 
-    } else if (answer2 === "C") {
+    if (q2Result === "A") {
+        return 2; 
+    } else if (q2Result === "B") {
         return 4; 
+    } else if (q2Result === "C") {
+        return 1; 
     }
     }
-    
-    function question3 () {
+     
+    function question3 (q3Result) {
         
-    if (answer3 === "A") {
-        return 30;
-    } else if (answer3 === "B") {
-        return 15; 
-    } else if (answer3 === "C") {
-        return 6; 
+    if (q3Result === "A") {
+        return 4;
+    } else if (q3Result === "B") {
+        return 2; 
+    } else if (q3Result === "C") {
+        return 1; 
     }
     }
     
 
- function total () {
-     if ( cheerios > 5 && cheerios < 15) {
-         return "You are Cheerios!"; 
-     }
+ function getAnswer (totalScore) {
+     if (totalScore < 5 ) {
+         return "cheerio"; 
+     } else if (totalScore < 8) {
+         return "lucky charms";
+     } else {
+         return "strawberry joe's os ";
+     } 
  }

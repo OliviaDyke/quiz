@@ -11,16 +11,41 @@
 }
 
 body {
-    background-color: white;
+    background-color: #e6f9ff;
+    font-family: 'Source Code Pro', monospace;
 }
 
-.siliconValley {
+img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+.questions {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
-    height:50%;
+}
+
+h1 {
+font-family: 'Libre Barcode 39 Text', cursive;
+font-size: 60px; 
+display: flex; 
+justify-content: center; 
 }
 
 #caption {
     font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
 }
 
 #tomImg {
@@ -42,13 +67,22 @@ a {
 }
 
 button {
-    margin-top: 10px;
-    color: white;
-    background-color: red;
-    font-size: 40px;
-    border-radius: 25px;
-    border:3px groove black ;
-    font-family: monospace;
+    padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: lightblue;
+  border: none;
+  border-radius: 1999px;
+  box-shadow: 0 9px #999;
+  margin: 50px;
+}
+
+.result {
+    font-size: 25px;
+    
 }
 
 body{

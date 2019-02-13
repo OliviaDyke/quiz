@@ -9,7 +9,8 @@ $(document).ready(function() {
         var q2Result = $("#question2").val();
         var q3Result = $("#question3").val();
         var totalScore = question1(q1Result) + question2(q2Result) + question3(q3Result);
-        var result = $(".result").text("Your cereal is " + getAnswer(totalScore));
+        var ADDNAME = $("#name").val(); 
+        var result = $(".result").text( ADDNAME + " ," + " your cereal is " + getAnswer(totalScore));
     });
 
 });
@@ -51,12 +52,19 @@ $(document).ready(function() {
     }
     
 
+ 
+
  function getAnswer (totalScore) {
-     if (totalScore < 5 ) {
+     
+     
+ var ADDNAME = $("#name").val(); 
+     
+     if (totalScore === 3 ) {
          return "cheerio"; 
-     } else if (totalScore < 8) {
+     } else if (4 <= totalScore <= 6) {
          return "lucky charms";
      } else {
          return "strawberry joe's os ";
      } 
+
  }

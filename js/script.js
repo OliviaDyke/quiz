@@ -56,12 +56,9 @@ $(document).ready(function() {
 
  function getAnswer (totalScore) {
      
-     
- var ADDNAME = $("#name").val(); 
-     
-     if (totalScore === 3 ) {
+     if (totalScore === 3 || totalScore === 4) {
          return "cheerio"; 
-     } else if (4 <= totalScore <= 6) {
+     } else if  (totalScore === 5 || totalScore === 6) {
          return "lucky charms";
      } else {
          return "strawberry joe's os ";

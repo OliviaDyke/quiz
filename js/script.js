@@ -56,12 +56,12 @@ $(document).ready(function() {
 
  function getAnswer (totalScore) {
      
-     if (totalScore === 3 || totalScore === 4) {
+     if (1 < totalScore && totalScore < 4) {
          return "cheerio"; 
-     } else if  (totalScore === 5 || totalScore === 6) {
+     } else if  (totalScore < 5 && totalScore < 8) {
          return "lucky charms";
      } else {
-         return "strawberry joe's os ";
+         return "strawberry joe's os";
      } 
 
  }
